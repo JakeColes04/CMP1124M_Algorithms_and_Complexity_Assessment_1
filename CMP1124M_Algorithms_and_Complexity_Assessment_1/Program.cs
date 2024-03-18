@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 
 
 Console.WriteLine("1: Net_1_256.txt");
@@ -12,158 +12,128 @@ string choice = Console.ReadLine();
 
 if (choice == "1")
 {
-    String line;
     try
     {
+        //Path to the text file
+        string filePath = "C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_1_256.txt";
 
-        StreamReader sr = new StreamReader("C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_1_256.txt");
-        line = sr.ReadLine();
-        while (line != null)
+        // Reads all lines from the text file and put it into an array
+        string[] lines = File.ReadAllLines(filePath);
+        Console.WriteLine("Unsorted list:");
+        // Display each line in the array
+        foreach (string line in lines)
         {
             Console.WriteLine(line);
-            line = sr.ReadLine();
         }
-        sr.Close();
-        Console.ReadLine();
+
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Console.WriteLine("Exception: " + e.Message);
-    }
-    finally
-    {
-        Console.WriteLine("Executing finally block.");
+        // Handle any exceptions
+        Console.WriteLine("An error occurred: " + ex.Message);
     }
 }
 
 if (choice == "2")
 {
-    String line;
     try
     {
+        string filePath = "C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_1_2048.txt";
 
-        StreamReader sr = new StreamReader("C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_1_2048.txt");
-        line = sr.ReadLine();
-        while (line != null)
+        string[] lines = File.ReadAllLines(filePath);
+        Console.WriteLine("Unsorted list:");
+        foreach (string line in lines)
         {
             Console.WriteLine(line);
-            line = sr.ReadLine();
         }
-        sr.Close();
-        Console.ReadLine();
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Console.WriteLine("Exception: " + e.Message);
-    }
-    finally
-    {
-        Console.WriteLine("Executing finally block.");
+        Console.WriteLine("An error occurred: " + ex.Message);
     }
 }
 
 
 if (choice == "3")
 {
-    String line;
     try
     {
+        string filePath = "C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_2_256.txt";
 
-        StreamReader sr = new StreamReader("C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_2_256.txt");
-        line = sr.ReadLine();
-        while (line != null)
+        string[] lines = File.ReadAllLines(filePath);
+        Console.WriteLine("Unsorted list:");
+        foreach (string line in lines)
         {
             Console.WriteLine(line);
-            line = sr.ReadLine();
         }
-        sr.Close();
-        Console.ReadLine();
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Console.WriteLine("Exception: " + e.Message);
-    }
-    finally
-    {
-        Console.WriteLine("Executing finally block.");
+        Console.WriteLine("An error occurred: " + ex.Message);
     }
 }
+
 
 if (choice == "4")
 {
-    String line;
     try
     {
+        string filePath = "C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_2_2048.txt";
 
-        StreamReader sr = new StreamReader("C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_2_2048.txt");
-        line = sr.ReadLine();
-        while (line != null)
+        string[] lines = File.ReadAllLines(filePath);
+        Console.WriteLine("Unsorted list:");
+        foreach (string line in lines)
         {
             Console.WriteLine(line);
-            line = sr.ReadLine();
         }
-        sr.Close();
-        Console.ReadLine();
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Console.WriteLine("Exception: " + e.Message);
-    }
-    finally
-    {
-        Console.WriteLine("Executing finally block.");
+        Console.WriteLine("An error occurred: " + ex.Message);
     }
 }
+
 
 if (choice == "5")
 {
-    String line;
     try
     {
 
-        StreamReader sr = new StreamReader("C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_3_256.txt");
-        line = sr.ReadLine();
-        while (line != null)
+        string filePath = "C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_3_256.txt";
+
+
+        string[] lines = File.ReadAllLines(filePath);
+        Console.WriteLine("Unsorted list:");
+        foreach (string line in lines)
         {
             Console.WriteLine(line);
-            line = sr.ReadLine();
         }
-        sr.Close();
-        Console.ReadLine();
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Console.WriteLine("Exception: " + e.Message);
-    }
-    finally
-    {
-        Console.WriteLine("Executing finally block.");
+        Console.WriteLine("An error occurred: " + ex.Message);
     }
 }
 
+
 if (choice == "6")
 {
-    String line;
     try
     {
 
-        StreamReader sr = new StreamReader("C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_3_2048.txt");
-        line = sr.ReadLine();
-        while (line != null)
+        string filePath = "C:\\Users\\jakec\\source\\repos\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\CMP1124M_Algorithms_and_Complexity_Assessment_1\\Net_3_2048.txt"
+
+        string[] lines = File.ReadAllLines(filePath);
+        Console.WriteLine("Unsorted list:");
+        foreach (string line in lines)
         {
             Console.WriteLine(line);
-            line = sr.ReadLine();
         }
-        sr.Close();
-        Console.ReadLine();
     }
-    catch (Exception e)
+    catch (Exception ex)
     {
-        Console.WriteLine("Exception: " + e.Message);
-    }
-    finally
-    {
-        Console.WriteLine("Executing finally block.");
+
+        Console.WriteLine("An error occurred: " + ex.Message);
     }
 }
 
