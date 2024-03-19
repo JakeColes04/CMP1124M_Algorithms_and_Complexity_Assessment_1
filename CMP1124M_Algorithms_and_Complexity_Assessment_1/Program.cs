@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 
 
 Console.WriteLine("1: Net_1_256.txt");
