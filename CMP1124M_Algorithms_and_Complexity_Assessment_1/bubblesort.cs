@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
 {
-    internal class bubblesort
+    public class bubblesort
     {
-        public static void bubbleSort(int[] arr)
+        public void bubbleSort(int[] arr)
         {
             int n = arr.Length;
             for (int i = 0; i < n - 1; i++)
@@ -24,6 +24,11 @@ namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
                     }
                 }
             }
+            internal static void bubbleSort(string line)
+            {
+                throw new NotImplementedException();
+            }
+
         }
     }
 }
