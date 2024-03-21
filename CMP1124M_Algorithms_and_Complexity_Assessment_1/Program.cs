@@ -22,54 +22,93 @@ namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
             string choice = Console.ReadLine();
             if (choice == "1")
             {
-                
-                foreach (string line in txtlist.lists(@"C:\Users\jakec\source\repos\CMP1124M_Algorithms_and_Complexity_Assessment_1\CMP1124M_Algorithms_and_Complexity_Assessment_1\Net_1_256.txt"))
+                string filePath = @"file\Net_1_256.txt";
+
+                string[] lines = File.ReadAllLines(filePath);
+
+                int[] numbers = Array.ConvertAll(lines, int.Parse);
+
+                bubblesort.bubbleSort(numbers);
+
+                Console.WriteLine("Bubblesort complete");
+                foreach (int number in numbers)
                 {
-                    Console.WriteLine(line);
-                    Int32.TryParse(line, out int[] net1_256);
-                    bubblesort.bubbleSort(line);
+                    Console.WriteLine(number);
                 }
+                Console.WriteLine("Write what number you want: ");
+                string search = Console.ReadLine();
+                int target = Convert.ToInt32(search);
+                linearsearch.search(numbers, target);
             }
+
             if (choice == "2")
             {
-                foreach (string line in txtlist.lists(@"C:\Users\jakec\source\repos\CMP1124M_Algorithms_and_Complexity_Assessment_1\CMP1124M_Algorithms_and_Complexity_Assessment_1\Net_1_2048.txt"))
+                string filePath = @"file\Net_1_2048.txt";
+
+                string[] lines = File.ReadAllLines(filePath);
+
+                int[] numbers = Array.ConvertAll(lines, int.Parse);
+
+                bubblesort.bubbleSort(numbers);
+
+                Console.WriteLine("Bubblesort complete");
+                foreach (int number in numbers)
                 {
-                    Console.WriteLine(line);
-                    string net1_2048 = line;
+                    Console.WriteLine(number);
                 }
             }
+
             if (choice == "3")
             {
-                foreach (string line in txtlist.lists(@"C:\Users\jakec\source\repos\CMP1124M_Algorithms_and_Complexity_Assessment_1\CMP1124M_Algorithms_and_Complexity_Assessment_1\Net_2_256.txt"))
+                string filePath = @"file\Net_2_256.txt";
+
+                string[] lines = File.ReadAllLines(filePath);
+
+                int[] numbers = Array.ConvertAll(lines, int.Parse);
+
+                insertionsort.insertionSort(numbers);
+
+                Console.WriteLine("Insertion sort complete");
+                foreach (int number in numbers)
                 {
-                    Console.WriteLine(line);
-                    string net2_256 = line;
+                    Console.WriteLine(number);
                 }
             }
+        
             if (choice == "4")
             {
-                foreach (string line in txtlist.lists(@"C:\Users\jakec\source\repos\CMP1124M_Algorithms_and_Complexity_Assessment_1\CMP1124M_Algorithms_and_Complexity_Assessment_1\Net_2_2048.txt"))
+                string filePath = @"file\Net_2_2048.txt";
+
+                string[] lines = File.ReadAllLines(filePath);
+
+                int[] numbers = Array.ConvertAll(lines, int.Parse);
+
+                insertionsort.insertionSort(numbers);
+
+                Console.WriteLine("Insertion sort complete");
+                foreach (int number in numbers)
                 {
-                    Console.WriteLine(line);
-                    string net2_2048 = line;
+                    Console.WriteLine(number);
                 }
             }
+
             if (choice == "5")
             {
-                foreach (string line in txtlist.lists(@"C:\Users\jakec\source\repos\CMP1124M_Algorithms_and_Complexity_Assessment_1\CMP1124M_Algorithms_and_Complexity_Assessment_1\Net_3_256.txt"))
+                foreach (string line in txtlist.lists(@"file\Net_3_256.txt"))
                 {
                     Console.WriteLine(line);
                     string net3_256 = line;
                 }
             }
+
             if (choice == "6")
             {
-                foreach (string line in txtlist.lists(@"C:\Users\jakec\source\repos\CMP1124M_Algorithms_and_Complexity_Assessment_1\CMP1124M_Algorithms_and_Complexity_Assessment_1\Net_3_2048.txt"))
+                foreach (string line in txtlist.lists(@"file\Net_3_2048.txt"))
                 {
                     Console.WriteLine(line);
                     string net3_2048 = line;
                 }
             }
         }
-    }
+     }
 }
