@@ -56,6 +56,10 @@ namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
                 {
                     Console.WriteLine(number);
                 }
+                Console.WriteLine("Write what number you want: ");
+                string search = Console.ReadLine();
+                int target = Convert.ToInt32(search);
+                linearsearch.search(numbers, target);
             }
 
             if (choice == "3")
@@ -73,6 +77,10 @@ namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
                 {
                     Console.WriteLine(number);
                 }
+                Console.WriteLine("Write what number you want: ");
+                string search = Console.ReadLine();
+                int target = Convert.ToInt32(search);
+                linearsearch.search(numbers, target);
             }
         
             if (choice == "4")
@@ -90,6 +98,10 @@ namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
                 {
                     Console.WriteLine(number);
                 }
+                Console.WriteLine("Write what number you want: ");
+                string search = Console.ReadLine();
+                int target = Convert.ToInt32(search);
+                linearsearch.search(numbers, target);
             }
 
             if (choice == "5")
@@ -99,6 +111,7 @@ namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
                     Console.WriteLine(line);
                     string net3_256 = line;
                 }
+
             }
 
             if (choice == "6")
@@ -108,6 +121,7 @@ namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
                     Console.WriteLine(line);
                     string net3_2048 = line;
                 }
+
             }
         }
      }
