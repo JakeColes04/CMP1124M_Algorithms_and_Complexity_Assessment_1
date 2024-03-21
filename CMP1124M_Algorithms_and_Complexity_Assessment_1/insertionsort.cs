@@ -22,7 +22,7 @@ namespace CMP1124M_Algorithms_and_Complexity_Assessment_1
                     j = j - 1;
                 }
                 array[j + 1] = currentValue;
-                Console.WriteLine("Amoutn of steps taken: " + i);
+                Console.WriteLine("Amount of steps taken: " + i);
             }
         }
     }
